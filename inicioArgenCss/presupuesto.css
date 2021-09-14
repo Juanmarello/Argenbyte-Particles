@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    body{
+        background: rgb(29, 27, 27);
+     
+       
+    }
+        #particles-js{
+            
+            background: rgb(29, 27, 27);
+         overflow: hidden;
+            
+            width: 100%;
+            height: 100%;
+                    }
+    
+
+     .title{
+         color: white;
+         text-align: center;
+         display: flex;
+         justify-content: center;
+         
+     }
+.descripcion{
+    width: 350px;
+    height: 520px;
+    color: white;
+    border: 1px solid gray;
+    border-radius: 15px;
+    box-shadow: 5px 7px 15px black;
+    display: flex;
+    justify-content: center;
+    align-items:baseline;
+    margin: auto;
+    top: 30px;
+    padding: 15px ;
+    
+    
+}
+.line{
+    background: turquoise;
+    min-width: 250px;
+    
+    position: relative;
+    
+    margin-top: 10px;
+   
+    top: 5%;
+    padding: 1px;
+}
+.precio{
+    width: 300px;
+    height: 100px;
+    background: rgb(13, 15, 15);
+    margin-top: 20px;
+  display: flex;    
+  flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    
+   
+}
+.precio h2{
+    color: rgb(37, 255, 208);
+    font-size: 30px;
+}
+.descripcion  p{
+    font-size: 12px;
+    margin-top: 10px;
+}
+.server{
+    width: 350px;
+    height: 280px;
+    color: white;
+    border: 1px solid gray;
+    border-radius: 15px;
+    box-shadow: 5px 7px 15px black;
+    display: flex;
+    flex-direction: column;
+    
+    
+    margin: auto;
+   
+    padding: 5px ;
+    
+    
+    
+
+}
+.server p{
+    display: flex;
+    justify-content: start;
+    font-size: 12px;
+
+}

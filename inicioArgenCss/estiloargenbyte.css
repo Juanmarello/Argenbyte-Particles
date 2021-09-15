@@ -48,9 +48,7 @@ box-sizing: border-box;
     
 
 }
-.anim   {
-    width: 20px;
-}
+
 /*modal*/
 
 
@@ -66,7 +64,7 @@ box-sizing: border-box;
     flex-direction: column;
 }
 #particles-js{
-    background: rgba(0, 0, 0, 0.966);
+    background: rgba(139, 96, 96, 0.966);
     background-size: cover;
     width: 100%;
     height: 100%;
@@ -118,38 +116,95 @@ header{
     height: 150px;
     position: fixed;
     background: rgba(0, 0, 0, 0.418);
+    }
     
-   
-}
+    .header_invation{
+        animation: headerInvation infinite .5s linear;
+       
+       }
 
+    @keyframes headerInvation {
+        0%{background: rgb(255, 196, 4);}
+
+        20%{background: rgb(214,0,17);
+            background: linear-gradient(90deg, rgba(214,0,17,1) 0%, rgba(255,156,0,1) 100%); }
+
+        40%{background: rgb(214,0,17);
+            background: linear-gradient(90deg, rgba(214,0,17,1) 25%, rgba(255,199,0,1) 100%); }
+
+        60%{ background: rgb(214,0,17);
+            background: linear-gradient(90deg, rgba(214,0,17,1) 50%, rgba(255,199,0,1) 100%); }
+
+        80%{background: rgb(214,0,17);
+            background: linear-gradient(90deg, rgba(214,0,17,1) 75%, rgba(255,199,0,1) 100%); }
+
+        100%{background: rgb(214,0,17);
+            background: linear-gradient(90deg, rgba(214,0,17,1) 100%, rgba(255,199,0,1) 100%);}
+    }
+
+    .alien_nav{
+        width: 200px;
+        display: none;
+        
+    }
+
+    .alienNavZero{
+        z-index: 100;
+    width: 200px;
+    animation: ufoHeader linear 15s infinite alternate;
+    position: relative;
+}
+   
+
+@keyframes ufoHeader{
+    0%{
+        top: 0px;
+        border: transparent;
+        display: inline;
+        transform: translateX(0);
+        border-radius: 100px;
+        
+    }
+    50%{
+        top: 600px;
+        transform: translateX(900);
+        
+        border-radius: 100px;
+        border: transparent;
+    }
+    100%{
+        border-radius: 100px;
+        top: 0px;
+        display: inline;
+        transform: translateX(1800px);
+       
+        border: transparent;
+    }
+}
 
 .imgUfo{
     background: transparent;
-    animation: invationUfo normal infinite 20s linear ;
+    animation: invationUfo normal infinite 10s linear ;
     position: relative;
 }
 
 @keyframes invationUfo{
     0%{
-        top: 0;
-        right: 0;
+      
         transform: rotate(0deg);
       
     }
     50%{
-        top: 50px;
-        right: 600px;
-        transform: rotate(125deg);
+        transform: rotate(-18deg);
+       
     }
-  75%{
-    bottom: 200px;
-    right: 900px;
-    transform: rotate(250deg);
+    
+    75%{
+       
+        transform: rotate(-18deg);
     }
     100%{
-        top: 0;
-        right:0;
-        transform: rotate(360deg);
+        transform: rotate(0deg);
     }
   }
 
@@ -165,16 +220,16 @@ header{
     0% {box-shadow:  -80px -90px 30px 30px 20px red;
          }
     10%{
-        box-shadow: -40px -40px 100px 100px 250px rgb(89, 255, 177) ;
+        box-shadow: -140px -140px 200px 100px 250px rgb(89, 255, 177) ;
     }
-    30% {box-shadow: -40px -40px 100px 100px 250px red ;
+    30% {box-shadow: -240px -40px 300px 100px 250px red ;
          }
      50%{
-        box-shadow: -60px -60px 60px 100px 100px 250px rgb(217, 26, 255) ;
+        box-shadow: -60px -60px 60px 100px 100px 350px rgb(217, 26, 255) ;
      }    
-    90% {box-shadow: 100px 100px 250px rgb(255, 72, 0);
+    90% {box-shadow: 200px 100px 450px rgb(255, 72, 0);
          }
-    100%{box-shadow: 200px 200px 250px rgb(255, 72, 0);
+    100%{box-shadow: 300px 200px 550px rgb(255, 72, 0);
          }
    
 }

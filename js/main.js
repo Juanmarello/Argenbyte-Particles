@@ -1,5 +1,6 @@
 
-
+const AlienHeader = document.getElementById('alien_nav');
+const Header = document.getElementById('header');
 const imgUfo = document.getElementById('imgUfo');
    const botonInvacion = document.getElementById('btn__InvationMode');
    const modulos = document.querySelectorAll('.webDev');
@@ -51,7 +52,12 @@ function getInvationMode(){
         index.classList.add('invationModule')
     }
     imgUfo.classList.add('imgUfo');
+    Header.classList.add('header_invation');
+    AlienHeader.classList.remove('alien_nav')
+    AlienHeader.classList.add('alienNavZero');
+    
     console.log('ok');
+
 };
 
 botonInvacion.addEventListener('click', getInvationMode);
